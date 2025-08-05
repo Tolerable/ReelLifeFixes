@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reel Life Fixes - Modern Problems. Timeless Solutions.</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            color: white;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .hero {
+            padding: 4rem 0;
+        }
+
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            background: linear-gradient(45deg, #ff6b6b, #4ecdc4, #45b7d1);
+            background-size: 300% 300%;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: gradient 3s ease infinite;
+        }
+
+        @keyframes gradient {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .tagline {
+            font-size: 1.8rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+            text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+        }
+
+        .description {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 3rem;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+            opacity: 0.8;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: linear-gradient(45deg, #ff4757, #ff3742);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            font-size: 1.3rem;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 50px;
+            box-shadow: 0 8px 20px rgba(255, 71, 87, 0.3);
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 25px rgba(255, 71, 87, 0.4);
+            background: linear-gradient(45deg, #ff3742, #ff2d3a);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 4rem 0;
+        }
+
+        .feature-card {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 15px;
+            padding: 2rem;
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-title {
+            font-size: 1.4rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .feature-text {
+            opacity: 0.8;
+            line-height: 1.5;
+        }
+
+        .video-preview {
+            margin: 3rem 0;
+            padding: 2rem;
+            background: rgba(0, 0, 0, 0.2);
+            border-radius: 15px;
+            backdrop-filter: blur(5px);
+        }
+
+        .video-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .video-thumb {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            padding: 1.5rem;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .video-title {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .video-desc {
+            opacity: 0.7;
+            font-size: 0.9rem;
+        }
+
+        .footer {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.2);
+            opacity: 0.6;
+        }
+
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.4rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+            
+            .container {
+                padding: 1rem;
+            }
+        }
+
+        .phone-mockup {
+            width: 200px;
+            height: 400px;
+            background: #000;
+            border-radius: 25px;
+            margin: 2rem auto;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+
+        .phone-screen {
+            width: 180px;
+            height: 380px;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            border-radius: 20px;
+            margin: 10px auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="hero">
+            <h1 class="logo">REEL LIFE FIXES</h1>
+            <p class="tagline">Modern Problems. Timeless Solutions.</p>
+            <p class="description">
+                Short-form spiritual stories for the smartphone generation. In a world of endless scrolling and digital noise, 
+                sometimes the most profound messages come in the smallest packages. Each 3-minute story tackles the real struggles 
+                of modern digital life and points toward timeless hope.
+            </p>
+            <a href="https://www.youtube.com/@ReelLifeFixes" class="cta-button" target="_blank">
+                Watch on YouTube
+            </a>
+        </div>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-icon">📱</div>
+                <h3 class="feature-title">Digital Age Stories</h3>
+                <p class="feature-text">Real situations everyone faces: phone addiction, social media pressure, digital validation, and the search for authentic connection in a virtual world.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">⏱️</div>
+                <h3 class="feature-title">Perfect Length</h3>
+                <p class="feature-text">3-minute stories designed for busy lives. Long enough to tell a complete story, short enough to watch during your coffee break.</p>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-icon">💡</div>
+                <h3 class="feature-title">Timeless Solutions</h3>
+                <p class="feature-text">Ancient wisdom for modern problems. Stories that start with today's struggles and point toward lasting peace and purpose.</p>
+            </div>
+        </div>
+
+        <div class="video-preview">
+            <h2 style="margin-bottom: 1rem;">Current Episodes</h2>
+            <div class="video-grid">
+                <div class="video-thumb">
+                    <div class="video-title">3 AM Scrolling</div>
+                    <p class="video-desc">When her phone dies at 3 AM, Sarah discovers what she was really looking for was never on that screen.</p>
+                </div>
+                
+                <div class="video-thumb">
+                    <div class="video-title">My Phone Is Listening</div>
+                    <p class="video-desc">Cora's paranoia about phone surveillance leads to discovering who's really been listening to her heart.</p>
+                </div>
+                
+                <div class="video-thumb">
+                    <div class="video-title">Verification Pending</div>
+                    <p class="video-desc">Layla's desperate quest for digital verification leads to an eye-scanning Orb and the discovery that she was already verified all along.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="phone-mockup">
+            <div class="phone-screen">
+                <div>
+                    <p style="font-size: 1rem; margin-bottom: 1rem;">📺</p>
+                    <p>Watch stories that speak to the heart of modern life</p>
+                </div>
+            </div>
+        </div>
+
+        <div style="margin: 3rem 0;">
+            <p style="font-size: 1.1rem; margin-bottom: 2rem;">
+                Inspired by the powerful tract ministry tradition, bringing timeless messages to today's digital world.
+            </p>
+            <a href="https://www.youtube.com/@ReelLifeFixes" class="cta-button" target="_blank">
+                Subscribe Now
+            </a>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2025 Reel Life Fixes. Stories that matter for lives that matter.</p>
+        </div>
+    </div>
+
+    <script>
+        // Simple fade-in animation on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Apply fade-in to feature cards
+        document.querySelectorAll('.feature-card, .video-thumb').forEach(el => {
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(el);
+        });
+
+        // YouTube button click tracking
+        document.querySelectorAll('.cta-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Track click if you add analytics later
+                console.log('YouTube button clicked');
+            });
+        });
+    </script>
+</body>
+</html>
